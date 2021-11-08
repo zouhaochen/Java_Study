@@ -1,5 +1,4 @@
 package day03;
-
 public class Demo13 {
     public static void main(String[] args) {
         //元素类型[] 数组名 = new(用于在内存中产生一个容器实体) 元素类型 [元素个数或数组长度];
