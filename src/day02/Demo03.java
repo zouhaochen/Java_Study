@@ -13,15 +13,16 @@ public class Demo03 {
 
         //定义了两个变量a，b，a已经被赋值为3，b未被赋值。只有被复制了的变量才可以被使用，b无法被使用。
         int a = 3, b, c;
-        b = a ++;
-        c = ++a;
+        b = a++;
         System.out.println(b);
         System.out.println(a);
+        c = ++a;
         System.out.println(c);
+
         /*
         a ++: 给a这个变量中的值进行一次+1操作，并把+1操作后的值重新赋给a
         a ++ -> a = a + 1
-        b = a ++：运算顺序：先把a的值进行赋值运算赋给b，然后a再自增。
+        b = a++：运算顺序：先把a的值进行赋值运算赋给b，然后a再自增。
         b = ++a：先自增再赋值
          */
 

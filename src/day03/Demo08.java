@@ -14,7 +14,7 @@ public class Demo08 {
             {
                 System.out.print("-");
             }
-            for(int z = 0; z <=x; z++)
+            for(int z = 0; z <= x; z++)
             {
                 System.out.print("* ");
             }

@@ -15,13 +15,9 @@ public class Demo14 {
         {
             for(int y = 0; y < c; y++)
             {
-                if(x < matrix.length && y < matrix[0].length)
-                {
-                    matrix[x][y] = sc.nextInt();
-                    System.out.print(matrix[x][y]+" ");
-                }
-                else
-                    System.out.println("finish input");
+                matrix[x][y] = sc.nextInt();
+                System.out.print(matrix[x][y]+" ");
+
             }
             System.out.println();
         }
