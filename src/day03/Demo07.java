@@ -9,6 +9,7 @@ public class Demo07 {
             System.out.println("x="+x);
             break;
         }
+        System.out.println();
 
         w: for (int x = 0; x < 3; x++)
         {
@@ -18,6 +19,7 @@ public class Demo07 {
                 break w;
             }
         }
+        System.out.println();
 
         //continue：只能作用于循环结构
         for (int x = 0; x < 3; x ++)
@@ -25,6 +27,7 @@ public class Demo07 {
             System.out.println("x="+x);
             continue;
         }
+        System.out.println();
 
         //continue：只能作用于循环结构，继续循环。特点：结束本次循环，继续下次循环
         for (int x = 0; x <= 10; x++)
@@ -33,6 +36,7 @@ public class Demo07 {
                 continue;
             System.out.println("x="+x);
         }
+        System.out.println();
 
         w: for (int x = 0; x < 3; x++)
         {
