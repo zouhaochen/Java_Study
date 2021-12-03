@@ -3,6 +3,7 @@ package day15;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.Iterator;
+import java.util.TreeSet;
 
 /*
 ? 通配符，也可以理解为占位符
@@ -32,6 +33,34 @@ public class Demo11
         */
 
         printCollNew(al1);
+        System.out.println();
+
+        TreeSet<StudentNew> ts = new TreeSet<StudentNew>(new Comp());
+
+        ts.add(new StudentNew("abc03"));
+        ts.add(new StudentNew("abc04"));
+        ts.add(new StudentNew("abc06"));
+        ts.add(new StudentNew("abc09"));
+
+        Iterator<StudentNew> it = ts.iterator();
+        while(it.hasNext())
+        {
+            System.out.println(it.next().getName());
+        }
+        System.out.println();
+
+        TreeSet<WorkerNew> ts1 = new TreeSet<WorkerNew>(new Comp());
+
+        ts1.add(new WorkerNew("work03"));
+        ts1.add(new WorkerNew("work04"));
+        ts1.add(new WorkerNew("work06"));
+        ts1.add(new WorkerNew("work09"));
+
+        Iterator<WorkerNew> it1 = ts1.iterator();
+        while(it1.hasNext())
+        {
+            System.out.println(it1.next().getName());
+        }
     }
 
     public static void printColl(ArrayList<PersonNew> al)
@@ -75,3 +104,19 @@ class StudentNew extends PersonNew
     }
 }
 
+//比较器，指定父类型，既能接受Student又能接收Worker
+class Comp implements Comparator<PersonNew>
+{
+    public int compare(PersonNew s1, PersonNew s2)
+    {
+        return s1.getName().compareTo(s2.getName());
+    }
+}
+
+class WorkerNew extends PersonNew
+{
+    WorkerNew(String name)
+    {
+        super(name);
+    }
+}
