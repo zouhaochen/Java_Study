@@ -21,6 +21,7 @@ public class Demo03
             while((line=bufr.readLine())!=null)
             {
                 bufw.write(line);
+                bufw.newLine();
                 bufw.flush();
             }
         }
