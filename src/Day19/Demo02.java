@@ -11,6 +11,7 @@ import java.io.IOException;
 该缓冲区提供了一个一次读一行的方法：readLine，方便于对文本数据的获取
 当返回null时，表示读到文件末尾
 readLine返回的是一行中的有效数据，不包含回车
+readLine方法返回的时候之返回回车符之前的数据内容，并不返回回车符
  */
 public class Demo02
 {
